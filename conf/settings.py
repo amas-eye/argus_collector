@@ -1,7 +1,7 @@
 """
 default settings
 """
-OPEN_TSDB_HOST = 'localhost'
+OPEN_TSDB_HOST = 'opentsdb'
 OPEN_TSDB_PORT = 4242
 
 """
@@ -15,10 +15,10 @@ and finally adding up the AGENT_MANAGER_TOTAL as the manager you have added
 AGENT_MANAGER_HOST1 = 'localhost'
 AGENT_MANAGER_PORT1 = 8001
 
-AGENT_MANAGER_HOST2 = '192.168.0.249'
-AGENT_MANAGER_PORT2 =  8001
+# AGENT_MANAGER_HOST2 = '192.168.0.249'
+# AGENT_MANAGER_PORT2 =  8001
 
-AGENT_MANAGER_TOTAL = 2
+AGENT_MANAGER_TOTAL = 1
 
 
 PUSH_STATUS_FREQUENCY = 1 * 60
