@@ -4,7 +4,7 @@
 import os
 
 
-OPEN_TSDB_HOST = '132.122.70.138'
+OPEN_TSDB_HOST = 'opentsdb'
 OPEN_TSDB_PORT = 4242
 
 DB = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'test.db')
