@@ -1203,8 +1203,11 @@ def main(argv):
     # push_tcollector_status()
     # TODO: 上报采集Agent信息的线程
     if PUSH_STATUS:
-        pusher = threading.Thread(target=push_tcollector_status, args=())
-        pusher.start()
+        try:
+            pusher = threading.Thread(target=push_tcollector_status, args=())
+            pusher.start()
+        except Exception as e:
+            LOG.error(e, exc_info=True)
 
     # at this point we're ready to start processing, so start the ReaderThread
     # so we can have it running and pulling in data for us
