@@ -1,1 +1,1 @@
-# amas-collector
+# argus-collector
